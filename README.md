@@ -32,15 +32,9 @@ There are two endpoints available:
 - Feel free to modify or install necessary code. If installing packages that are wrappers for native browser APIs, please leave a comment explaining why.
 
 
-## Tasks
+## Tasks - Take home challenge (2 hours)
 
-There are two stages to this task depending on the type of challenge you're taking.
-
-#### Live challenge (1 hour)
-[Task one](#1-realtime-search).
-
-#### Take home challenge (2 hours)
-Task one and attempt [task two](#2-realtime-search-results). We appreciate that your time is valuable and recommend you not spend more than 2 hours on these tasks. Focusing on one small thing well or a bigger scope as a proof of concept, both approaches are valid.
+ We appreciate that your time is valuable and recommend you not spend more than 2 hours on these tasks. Focusing on one small thing well or a bigger scope as a proof of concept, both approaches are valid.
 
 ### 1. Realtime search
 We have an tags api endpoint at `http://localhost:8000/api/tags` which returns an array of all tags available in the format:
@@ -77,7 +71,7 @@ To have a type ahead search functionality like [Pinterest](https://www.pinterest
 - **Not exposing the whole dataset** would be beneficial
 
 ### 2. Realtime search results
-Once task one has been completed, when a user selects a tag, another call to `api/cars` endpoint need to be made to display the result in some UI (similar to [Pinterest](https://www.pinterest.co.uk/search/pins/?q=red%20car&rs=typed)) The more interesting or unique the better, examples could be but not limited too a11y, animation, image optimization, semantic markup, schemas, WebGL. _Again, we appreciate that all of them can't be achieved in two hours and we don't expect to you to cover most of them, let alone all of them._
+Once task one has been completed, when a user selects a tag, another call to `api/cars` endpoint needs to be made to display the result in some UI (similar to [Pinterest](https://www.pinterest.co.uk/search/pins/?q=red%20car&rs=typed)) The more interesting or unique the better, examples could be but not limited too a11y, animation, image optimization, semantic markup, schemas, WebGL. _Again, we appreciate that all of them can't be achieved in two hours and we don't expect to you to cover most of them, let alone all of them._
 
 We have cars api endpoint available at `http://localhost:8000/api/cars` which returns array of all cars available in following format:
 
@@ -147,7 +141,7 @@ By adding a `tag` query the endpoint will return an array of matching cars `http
 
 ## Designs
 
-Use the provided Figma designs as a visual guide for implementing the web page layout, styles, and elements.
+Use the provided Figma designs as a visual guide for implementing the app layout, styles, and elements.
 
 Figma: https://www.figma.com/file/AQ6dwlbpusgQzBpJyAqcVq/Recruitment?type=design&node-id=0-1&mode=design&t=5ICSMjEzDNgfOBVg-0
 Password: Motorway
