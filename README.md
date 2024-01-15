@@ -139,6 +139,13 @@ By adding a `tag` query the endpoint will return an array of matching cars `http
 ]
 ```
 
+#### Images
+
+Use `.jpg` (JPEG) or `.webp` (WebP) file extensions when referencing images. 
+
+The image links from the responses have excluded file extension. This design is intentional to offer flexibility in the choice of image formats while maintaining a consistent and clean URL structure.
+
+
 ## Designs
 
 Use the provided Figma designs as a visual guide for implementing the app layout, styles, and elements.
