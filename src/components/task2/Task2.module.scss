@@ -1,0 +1,32 @@
+@use '../../styles/core' as core;
+
+.Task2 {
+  .carList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    grid-auto-rows: 300px; 
+    gap: 15px;
+    justify-content: center;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+  }
+
+  .car {
+    cursor: pointer;
+    transition: all 300ms;
+    overflow: hidden; 
+  }
+
+  .car img {
+    grid-row: 1 / span 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+
+  }
+
+  .car:hover {
+    transform: scale(1.02);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}

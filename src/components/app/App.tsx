@@ -1,3 +1,4 @@
+import { createContext, useState } from 'react';
 import Header from '../header/Header';
 import Task2 from '../task2/Task2';
 
@@ -11,14 +12,17 @@ import styles from './App.module.scss';
  * http://localhost:8000/api/cars?tag=ferrari - to return matching cars
  */
 
+export const appContext = createContext(null);
+
 const App: React.FC = () => {
+  const [selectedTag, setSelectedTag] = useState('');
   return (
-    <>
+    <appContext.Provider value={{ selectedTag, setSelectedTag }}>
       <Header />
       <main className={styles.main}>
         <Task2 />
       </main>
-    </>
+    </appContext.Provider>
   );
 };
 

@@ -1,0 +1,41 @@
+@use '../../styles/core' as core;
+
+.Task1 {
+  width: 500px;
+
+  .searchBarWrapper {
+  display: flex;
+  flex-direction: column;
+
+  }
+
+  // .searchIcon svg{
+  //   height: 40px;
+  //   background-color: white;
+  //   stroke: black;
+
+  // }
+
+  .searchInput{
+    height: 40px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+  
+  }
+
+  .searchList {
+    position: absolute;
+    top: 80px;
+    width: 500px;
+  }
+
+  .searchList li {
+    padding: 5px;
+  }
+
+  .searchList li:hover {
+    background-color: grey;
+    border-radius: 8px;
+  }
+}
